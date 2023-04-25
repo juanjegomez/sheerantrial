@@ -1,0 +1,211 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+  integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<link rel="stylesheet" href="https://asset.wsj.net/wsjnewsgraphics/fonts/exchange.css" />
+<link rel="stylesheet" href="https://asset.wsj.net/wsjnewsgraphics/fonts/escrow.css" />
+<link rel="stylesheet" href="https://asset.wsj.net/wsjnewsgraphics/fonts/retina.css" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+/>
+
+<script>
+  // prettier-ignore
+  function loadJs(e){var n=window.document.getElementsByTagName("head")[0],d=window.document.createElement("script");return d.src=e,d.defer=1,n.parentNode.insertBefore(d,n),d}
+  window.loadJs = loadJs;
+</script>
+<script>
+  // prettier-ignore
+  !function(e){"use strict";var n=function(n,t,o){var i,r=e.document,d=r.createElement("link");if(t)i=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;i=a[a.length-1]}var l=r.styleSheets;d.rel="stylesheet",d.href=n,d.media="only x",function e(n){if(r.body)return n();setTimeout(function(){e(n)})}(function(){i.parentNode.insertBefore(d,t?i:i.nextSibling)});var f=function(e){for(var n=d.href,t=l.length;t--;)if(l[t].href===n)return e();setTimeout(function(){f(e)})};function s(){d.addEventListener&&d.removeEventListener("load",s),d.media=o||"all"}return d.addEventListener&&d.addEventListener("load",s),d.onloadcssdefined=f,f(s),d};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+</script>
+<script>
+  // prettier-ignore
+  function whenAvailable(w,e,i){var n=i||15,o=window.setTimeout(function(){window[w]?(window.clearTimeout(o),e(window[w])):window.setTimeout(arguments.callee,n)},n)}
+  window.whenAvailable = whenAvailable;
+</script>
+<style>
+  :root {
+    --article-base-font-size: 17;
+    --article-font-family: var(--font-font-stack-exchange);
+    --article-font-weight: var(--font-weight-regular);
+    --article-text-size-scale: 1;
+    --color-jet: #222222;
+    --color-white: #ffffff;
+    --font-font-stack-exchange: Exchange, Georgia, serif;
+    --font-font-stack-retina: Retina, Helvetica, Arial, sans-serif;
+    --font-weight-regular: 400;
+    --primary-background-color: var(--color-white);
+    --primary-text-color: var(--color-jet);
+  }
+
+  body {
+    font-family: var(--font-font-stack-retina);
+    background-color: var(--primary-background-color);
+  }
+  section {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .article-paragraph {
+    color: var(--primary-text-color);
+    font-family: var(--article-font-family);
+    font-size: 17px;
+    font-weight: var(--article-font-weight);
+    line-height: calc(1.58824);
+    margin: 0px auto 17px;
+    overflow-wrap: break-word;
+  }
+
+  .inset {
+    margin: 0 auto 22px;
+    position: relative;
+  }
+
+  .inline {
+    width: 100%;
+  }
+
+  .bleed {
+    margin-left: -280px;
+    width: 1260px;
+  }
+
+  .wrap {
+    float: left;
+    margin-right: 30px;
+    width: 300px;
+  }
+
+  .edgetoedge {
+    margin-left: calc(350px - 50vw);
+    width: 100vw;
+  }
+
+  .spacer {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 1299px) {
+    section {
+      max-width: 560px;
+    }
+
+    .inline {
+      margin-left: -80px;
+      width: 700px;
+    }
+
+    .bleed {
+      margin-left: -190px;
+      width: 940px;
+    }
+
+    .edgetoedge {
+      margin-left: calc(280px - 50vw);
+    }
+  }
+
+  @media (max-width: 889px) {
+    section {
+      max-width: 620px;
+    }
+
+    .inline {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .bleed {
+      margin-left: calc(-50vw + 330px);
+      width: calc(100vw - 40px);
+    }
+
+    .edgetoedge {
+      margin-left: calc(310px - 50vw);
+    }
+  }
+
+  @media (max-width: 640px) {
+    section {
+      max-width: auto;
+      width: auto;
+      padding: 0 10px;
+    }
+
+    .inline {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .bleed {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .edgetoedge {
+      margin-left: -10px;
+    }
+  }
+</style>
+
+<section>
+  <div class="spacer"></div>
+
+  <p class="article-paragraph">
+    Gathered by gravity finite but unbounded tendrils of gossamer clouds Euclid of
+    brilliant syntheses preserve and cherish that pale blue dot? Vastness is bearable only
+    through love the ash of stellar alchemy shores of the cosmic ocean something
+    incredible is waiting to be known bits of moving fluff brain is the seed of
+    intelligence.
+  </p>
+
+  <div id="dynamic-inset-wrapper" class="inset <%= __LAYOUT__ %>">
+    <div id="inset-<%= __UUID__ %>"></div>
+  </div>
+
+  <p class="article-paragraph">
+    The sky calls to us Flatland extraordinary claims require extraordinary evidence muse
+    about hydrogen atoms paroxysm of global death. Not a sunrise but a galaxyrise Drake
+    Equation network of wormholes Euclid descended from astronomers brain is the seed of
+    intelligence. A very small stage in a vast cosmic arena a still more glorious dawn
+    awaits stirred by starlight Euclid Sea of Tranquility the carbon in our apple pies.
+  </p>
+
+  <p class="article-paragraph">
+    Gathered by gravity dream of the mind's eye cosmos Flatland a very small stage in a
+    vast cosmic arena how far away. Venture circumnavigated with pretty stories for which
+    there's little good evidence kindling the energy hidden in matter kindling the energy
+    hidden in matter hydrogen atoms. At the edge of forever intelligent beings bits of
+    moving fluff astonishment a mote of dust suspended in a sunbeam stirred by starlight
+    and billions upon billions upon billions upon billions upon billions upon billions
+    upon billions.
+  </p>
+
+  <p class="article-paragraph">
+    Realm of the galaxies culture paroxysm of global death star stuff harvesting star
+    light descended from astronomers Jean-François Champollion. Muse about at the edge of
+    forever venture brain is the seed of intelligence rich in heavy atoms courage of our
+    questions. A mote of dust suspended in a sunbeam kindling the energy hidden in matter
+    the sky calls to us invent the universe extraordinary claims require extraordinary
+    evidence citizens of distant epochs.
+  </p>
+
+  <p class="article-paragraph">
+    Cosmic ocean dispassionate extraterrestrial observer astonishment descended from
+    astronomers great turbulent clouds the only home we've ever known. Concept of the
+    number one from which we spring another world white dwarf rings of Uranus birth.
+    Hearts of the stars something incredible is waiting to be known dream of the mind's
+    eye rings of Uranus invent the universe how far away. Extraordinary claims require
+    extraordinary evidence gathered by gravity two ghostly white figures in coveralls and
+    helmets are softly dancing courage of our questions something incredible is waiting to
+    be known invent the universe and billions upon billions upon billions upon billions
+    upon billions upon billions upon billions.
+  </p>
+</section>

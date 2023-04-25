@@ -1,0 +1,10 @@
+{
+	"capi": false,
+	"https": false,
+	"fallbackImage": "",
+	"framework": "handlebars",
+	"layout": "edgetoedge",
+	"slug": "sheerantrial",
+	"ssg": true,
+	"uuid": "f9287bcc-29c8-4227-9a7c-6c92a41069ac"
+}
