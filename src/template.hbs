@@ -1,4 +1,56 @@
-<div>
-  {{> title}}
-  <p>{{ description }}</p>
+
+<div id="inset-{{uuid}}">
+  <div class="ac-wrapper ac-idle ac-loading ac-id-{{id}}" aria-describedby="ac-description-{{uuid}}">
+
+    <div class="ac-flex">
+      <div class="ac-toggle-container ac-toggle-on">
+        <div class="ac-toggle"></div>
+        <div class="ac-toggle-tip">Toggle to compare songs</div>
+      </div>
+      <div class="ac-albums">
+        {{#each data}}
+        <div class="ac-album ac-album">
+          <div class="br-meter">
+            <div class="br-bar"></div>
+            <div class="br-bar"></div>
+            <div class="br-bar"></div>
+            <div class="br-bar"></div>
+          </div>
+          <div class="ac-art"><img aria-hidden="true" src="{{audioimg}}">
+          </div>
+          <div class="ac-name" aria-hidden="true">{{title}}</div>
+          <div class="ac-album-name" aria-hidden="true">{{album}}</div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="ac-spectograms-and-controls">
+        <div class="ac-spectograms">
+          <div class="ac-play"></div>
+          {{#each data}}
+          <div class="ac-player ac-player">
+            <div class="ac-name-mobile">{{title}}</div>
+            <div class="ac-spectogram" style="background-image:url({{spectogram}})"></div>
+            <audio src="{{audiosrc}}" data-time-offset="{{offset}}" preload="auto">
+          </div>
+          {{/each}}
+          <div class="ac-slider">
+            <div class="ac-dial"></div>
+          </div>
+        </div>
+        <div class="ac-footer">
+        <div class="ac-player-controls">
+          <div class="ac-control-play-pause ac-control-button"></div>
+          <div class="ac-control-rewind ac-control-button"></div>
+          <div class="ac-control-loop ac-control-text" aria-hidden="true">
+            <div class="ac-toggle"></div> Repeat
+          </div>
+          <div class="ac-control-time ac-control-text" aria-hidden="true">00:00</div>
+          <div class="ac-control-total-time ac-control-text" aria-hidden="true">01:00</div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <p class="ac-screen-reader" id="ac-description-{{uuid}}">Audio player comparing the two songs.</p>
+  </div>
 </div>
